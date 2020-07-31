@@ -98,7 +98,12 @@ ul.běh:hover{
     bottom: 210px;
     display: flex;
     margin-left: 90%;
-    transition: transform;
+}
+.motylek{
+    position: absolute;
+    bottom: 130px;
+    display: flex;
+    margin-left: 90%;
 }
 .swagger:hover .napis{
     transform: translate(270%);
@@ -107,6 +112,11 @@ ul.běh:hover{
 }
 .swagger:hover .bryle{
     transform: translate(-550%);
+    transition-duration: 1.5s;
+    transition-timing-function: ease-out;
+}
+.swagger:hover .motylek{
+    transform: translate(-670%);
     transition-duration: 1.5s;
     transition-timing-function: ease-out;
 }
