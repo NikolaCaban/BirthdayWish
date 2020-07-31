@@ -1,17 +1,5 @@
-ul {
-    list-style: none;
-    padding: 0;
-}
-li {
-    font-size: 40px;
-    line-height: 1;
-    margin-right: 100%;
-}
-ul:hover{
-    transform: translateX(1400px);
-    transition-duration: 7s;
-    transition-timing-function: cubic-bezier(.03,.99,.89,.94);
-    background-attachment: initial;
+.darky{
+    margin: 0px;
 }
 .malytheo{
     margin-top: 80px;
@@ -26,26 +14,99 @@ ul:hover{
     font-size: 40px;
     margin-top: 50px;
 }
-.mičuda {
-    float: center;
+ul.běh,
+ul.line {
+    list-style: none;
+    padding: 0;
+}
+ul.line {
+    display: flex;
+    flex-direction: row;
+}
+li {
+    font-size: 60px;
+    padding: 5px;
+    margin-right: 80%;
+}
+ul.běh:hover{
+    transform: translateX(1400px);
+    transition-duration: 7s;
+    transition-delay: 0.2s;
+    transition-timing-function: cubic-bezier(.03,.99,.89,.94);
+    background-attachment: initial;
+}
+
+.salva{
     position: relative;
-    width: 500px; 
-    height: 500px;
-    transition: transform;
+}
+.raketka{
+    display: flex;
+    position: absolute;
+}
+.salva:hover .raketka{
+    transform: rotate(45deg);
+    transition-duration: 0.2s;
+}
+
+
+.mičuda {
+    display: inline-flex;
+    position: relative;
+    width: 400px; 
+    height: 400px;
+}
+.one {
+    border-radius: 50%;
+}
+.two {
+    transition-delay: 1s;
+    transition-timing-function: linear;
 }
 .mičuda:hover{ 
-    transform: rotate(50deg);
-    border-radius: 50%;
+    transform: rotate(70deg);
     transition-duration: 2s;
 }
 .mičuda > img {
     position: absolute;
     width: 100%; height: 100%; 
 }
-.mičuda > .two {
-    opacity: 0;
-}
 .mičuda:hover > .two {
     opacity: 1;
 }
+.mičuda:hover > .one {
+    opacity: 0;
+    transition-delay: 1s;
+}
+.mičuda > .one {
+    opacity: 1;
+    transition: opacity 2s;
+}
 
+
+.swagger{
+    position: relative;
+}
+.napis{
+    position: absolute;
+    top: 20px;
+    display: flex;
+    margin-right: 100%;
+    transition-property: transform;
+}
+.bryle{
+    position: absolute;
+    bottom: 210px;
+    display: flex;
+    margin-left: 90%;
+    transition: transform;
+}
+.swagger:hover .napis{
+    transform: translate(270%);
+    transition-duration: 1.5s;
+    transition-timing-function: ease-out;
+}
+.swagger:hover .bryle{
+    transform: translate(-550%);
+    transition-duration: 1.5s;
+    transition-timing-function: ease-out;
+}
