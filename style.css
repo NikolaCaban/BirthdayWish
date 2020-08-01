@@ -120,7 +120,7 @@ ul.běh:hover{
     margin-left: 90%;
 }
 .swagger:hover .napis{
-    transform: translate(270%);
+    transform: translate(70%) rotate(330deg);
     transition-duration: 1.5s;
     transition-timing-function: ease-out;
 }
