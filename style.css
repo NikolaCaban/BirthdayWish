@@ -1,4 +1,6 @@
-.intro{
+.celek{
+    width: 1300px;
+}.intro{
     background-color: rgb(216, 115, 37);
     display: flex;
     flex-direction: column;
