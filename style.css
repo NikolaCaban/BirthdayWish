@@ -1,5 +1,6 @@
 .celek{
     width: 1300px;
+    margin: auto;
 }.intro{
     background-color: rgb(216, 115, 37);
     display: flex;
